@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App1"
+             x:Class="App1.MainPage">
+    <StackLayout>
+        <Label Text="Welcome to Xamarin.Forms!" 
+           HorizontalOptions="Center"
+           Margin="0,50,0,0"/>
+        <Grid HorizontalOptions="Center" VerticalOptions="Center" Margin="0, 200, 0, 0 ">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Entry x:Uid="UserName" x:Name="UserName" Grid.Row="1" Placeholder="Enter your user name" PlaceholderColor="Gray" FontSize="Medium" TextColor="Black"/>
+            <Entry x:Uid="UserPass" x:Name="UserPass" Grid.Row="2" Placeholder="Enter your password" PlaceholderColor="Gray" FontSize="Medium" TextColor="Black"/>
+            <Button x:Uid="BtnLogin" x:Name="BtnLogin" Grid.Row="3" Grid.Column="0" Text="Login" BackgroundColor="Aquamarine" Opacity="0.5" BorderRadius="20"/>
+            <Button x:Uid="BtnRegister" x:Name="BtnRegister" Grid.Row="3" Grid.Column="1" Text="Register" BackgroundColor="Aquamarine" Opacity="0.5" BorderRadius="20"/>
+        </Grid>
+        <Label x:Uid="lblResult" x:Name="lblResult" HorizontalOptions="Center" Margin="0,20,0,50" FontSize="Medium"/>
+    </StackLayout>
+
+</ContentPage>
