@@ -17,7 +17,7 @@
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
             <Entry x:Uid="UserName" x:Name="UserName" Grid.Row="1" Placeholder="Enter your user name" PlaceholderColor="Gray" FontSize="Medium" TextColor="Black"/>
-            <Entry x:Uid="UserPass" x:Name="UserPass" Grid.Row="2" Placeholder="Enter your password" PlaceholderColor="Gray" FontSize="Medium" TextColor="Black"/>
+            <Entry x:Uid="UserPass" x:Name="UserPass" Grid.Row="2" Placeholder="Enter your password" PlaceholderColor="Gray" FontSize="Medium" TextColor="Black" IsPassword="True"/>
             <Button x:Uid="BtnLogin" x:Name="BtnLogin" Grid.Row="3" Grid.Column="0" Text="Login" BackgroundColor="Aquamarine" Opacity="0.5" BorderRadius="20"/>
             <Button x:Uid="BtnRegister" x:Name="BtnRegister" Grid.Row="3" Grid.Column="1" Text="Register" BackgroundColor="Aquamarine" Opacity="0.5" BorderRadius="20"/>
         </Grid>
